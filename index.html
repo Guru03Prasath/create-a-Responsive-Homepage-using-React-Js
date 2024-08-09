@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Home Page</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>DEV TEAM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>WELCOME TO DEVELOPER TEAM</h1>
+        <p>Your solution for innovative web design.</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction" id="about">
+        <div class="intro-text">
+            <h2>About Us</h2>
+            <p>We are a creative agency with a passion for design. We offer a range of services to help you build your online presence.</p>
+        </div>
+        <div class="intro-image">
+            <img src="intro-image.jpg" alt="About Us Image">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="service">
+            <img src="service1-icon.png" alt="Service 1 Icon">
+            <h3>Web Design</h3>
+            <p>We create stunning and responsive websites tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <img src="service2-icon.png" alt="Service 2 Icon">
+            <h3>SEO Optimization</h3>
+            <p>Optimize your website to rank higher in search engines and attract more visitors.</p>
+        </div>
+        <div class="service">
+            <img src="service3-icon.png" alt="Service 3 Icon">
+            <h3>Content Creation</h3>
+            <p>We provide high-quality content to engage your audience and boost your brand.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

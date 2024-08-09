@@ -1,0 +1,261 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #ff4f41;
+}
+
+/* Introduction Section */
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.intro-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.intro-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.service {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Initially hidden */
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .hero h1 {
+      font-size: 36px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+  .introduction, .services {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .service {
+      flex-basis: 100%;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+      padding: 15px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      display: none; /* Initially hidden */
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .hero h1 {
+      font-size: 42px;
+  }
+
+  .hero p {
+      font-size: 20px;
+  }
+
+  .introduction, .services {
+      flex-direction: column;
+      padding: 30px;
+  }
+
+  .service {
+      flex-basis: 100%;
+  }
+}
+
+/* Desktops and Laptops (769px and above) */
+@media (min-width: 769px) {
+  .hero h1 {
+      font-size: 48px;
+  }
+
+  .hero p {
+      font-size: 24px;
+  }
+
+  nav ul {
+      flex-direction: row;
+  }
+
+  .menu-toggle {
+      display: none; /* Hide on larger screens */
+  }
+
+  .introduction, .services {
+      flex-direction: row;
+  }
+
+  .service {
+      flex-basis: 30%;
+    }
+}
